@@ -1,0 +1,62 @@
+2.2 Make 
+
+
+En retapant la commande make dans un shell, une mise à jour des fichiers main.o function.o et de l'exécutable example est effectuée.
+
+En modifiant le fichier function.c puis en retapant la commande make, on constate une mise à jour des fichiers main.o, function.o et de l'exécutable example.
+
+En tapant la commande make clean, on constate la suppression des fichiers main.o, function.o et de l'exécutable example.
+
+
+
+Makefile évolué
+
+En retapant la commande make -f Makefile2 dans un shell, on constate qu'il ne s'est rien passé. On a le message: "make: rien à faire pour "all".
+
+En modifiant le fichier function.h et en retapant la commande make -f Makefile dans un shell,on constate qu'il y a une mise à jour du fichier function.o et de l'exécutable.
+
+La commande make -f Makefile2 clean supprime tous les fichiers ".o" ainsi que l'exécutable.
+
+
+2.3 Scons
+
+
+En tapant la commande scons dans un shell, les fichiers main.o, function.o et l'exécutable ont été créés.
+En retapant cette commande, scons indique que tout est bien à jour.
+
+En modifiant le fichier function.h et en retapant la commande scons, on constate une mise à jour des fichiers main.o, function.o ainsi que de l'exécutable.
+
+La commande scons -c a pour rôle d'effacer les fichiers ".o" et l'executable example
+
+
+2.4 Rake 
+
+En retapant la commande rake, les fichiers ".o" et example créés  en tapant premièrement cette commande ont été mis à jour.
+
+On remarque que Rake a un comportement similaire aux gestionnaires Make et Scons.
+
+En modifiant le fichier function.h et en retapant la commande rake, on constate que les fichiers main.o, function.o ainsi que l'exécutable sont mis à jour.
+
+La commande rake clean a pour rôle d'effacer les fichiers ".o" ainsi que l'exécutable.
+
+
+2.5 Ant
+
+La commande ant a créé un répertoire build qui contient les fichiers Main.class et Function.class correspondants respectivement aux fichiers Main.java et Function.java se trouvant dans le répertoire src.
+
+La commande ant dist a créé un répertoire dist qui contient un sous répertoire lib qui contient à son tour, un fichier .jar
+
+
+La commande ant clean supprime les répertoires dist et build.
+
+En tapant à nouveau la commande ant dist dans un shell, on remarque une nouvelle création des répertoires build et dist.
+
+
+
+
+
+
+
+
+
+

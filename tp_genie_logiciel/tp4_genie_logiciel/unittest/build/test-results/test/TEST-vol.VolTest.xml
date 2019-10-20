@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="vol.VolTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2019-10-20T10:04:12" hostname="kudzoafola-VirtualBox" time="0.081">
+  <properties/>
+  <testcase name="concatZero" classname="vol.VolTest" time="0.024"/>
+  <testcase name="toUpperIdZero" classname="vol.VolTest" time="0.001"/>
+  <testcase name="toUpperNegative" classname="vol.VolTest" time="0.004"/>
+  <testcase name="concatNonIntegerValue" classname="vol.VolTest" time="0.003"/>
+  <testcase name="concatNegativeValue" classname="vol.VolTest" time="0.004"/>
+  <testcase name="toUpperNonIntegerValue" classname="vol.VolTest" time="0.008"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
